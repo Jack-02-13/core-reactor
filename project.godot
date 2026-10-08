@@ -1,0 +1,28 @@
+config_version=5
+
+[application]
+config/name="Core Reactor"
+run/main_scene="res://scenes/main.tscn"
+
+[autoload]
+SaveManager="*res://scripts/save_manager.gd"
+BalanceConfig="*res://scripts/balance_config.gd"
+UpgradeManager="*res://scripts/upgrade_manager.gd"
+PrestigeManager="*res://scripts/prestige_manager.gd"
+GameManager="*res://scripts/game_manager.gd"
+AudioManager="*res://scripts/audio_manager.gd"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=800
+window/size/window_width_override=1280
+window/size/window_height_override=800
+window/size/resizable=true
+window/size/min_width=1024
+window/size/min_height=680
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.058, 0.07, 0.074, 1)
